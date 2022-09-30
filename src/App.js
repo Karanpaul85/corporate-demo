@@ -17,8 +17,11 @@ function App() {
 	const [showThankyou, setShowThankyou] = useState(false);
 	const [orderId, setOrderId] = useState(0);
 	const getCookies = cookies && Object.keys(cookies).length ? cookies : "";
+
+	//console.log(cookies, getCookies);
+
 	useEffect(() => {
-		if (getCookies.userLogin !== "undefined" && getCookies.userEmail !== "undefined") {
+		if (getCookies !== "" && getCookies.userLogin !== "undefined" && getCookies.userEmail !== "undefined") {
 			setUserLogin(false);
 			setIsUserLogin(true);
 		}

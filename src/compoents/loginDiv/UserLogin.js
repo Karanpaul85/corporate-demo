@@ -9,7 +9,8 @@ const UserLogin = ({ showPopup, setIsUserLogin }) => {
 	const [password, setPassword] = useState("");
 	const [errMsg, setErrMsg] = useState("");
 	const [err, setErr] = useState(false);
-	const [cookies, setCookie] = useCookies();
+	const [setCookie] = useCookies();
+
 	const handleChange = (event) => {
 		if (event.target.id === "email") {
 			setEmail(event.target.value);
@@ -17,6 +18,7 @@ const UserLogin = ({ showPopup, setIsUserLogin }) => {
 			setPassword(event.target.value);
 		}
 	};
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		if (email === "" && password === "") {
