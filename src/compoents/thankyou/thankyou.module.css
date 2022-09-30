@@ -1,0 +1,12 @@
+.full{
+  width: 100% !important;
+  margin-top: 15px;
+}
+.thankyou{
+  text-align: center;
+  width: 100%;
+}
+.confirm{
+  display: block;
+  margin-top: 20px;
+}

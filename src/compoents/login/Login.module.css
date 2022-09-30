@@ -1,0 +1,79 @@
+.transBg{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+.innerSec{
+  padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    min-width: 340px;
+    display: flex;
+    max-width: 90%;
+}
+.divSec{
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.divSec:last-child{
+  margin-bottom: 0;
+}
+.form{width: 100%;}
+.input{
+  width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #d5d5d5;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+.input:disabled{
+  background: #d5d5d5;
+}
+.input[type="button"],.input[type="submit"]{
+  text-transform: uppercase;
+  font-weight: 500;
+  background: #ff9212;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  transition: all ease-in-out 0.25s;
+}
+.input[type="button"]:hover,.input[type="submit"]:hover{
+  background: #e97e00;
+}
+.err{
+  color: #e53333;
+  text-align: center;
+}
+.inputErro{
+  border: 1px solid #e53333;
+}
+.heading{
+  display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-right: 44px;
+    min-height: 44px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.closeBtn{
+  position: absolute;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    top: -10px;
+    cursor: pointer;
+}
